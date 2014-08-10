@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  get 'leads/new' => 'leads#new'
+  post 'leads/new' => 'leads#create'
+  root :to => 'leads#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
