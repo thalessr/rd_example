@@ -1,6 +1,6 @@
 GIT
-  remote: git@github.com:thalessr/rd_sales.git
-  revision: 95579051895a436932f831e412d4c18be741a694
+  remote: https://github.com/thalessr/rd_sales.git
+  revision: 650f856f21627346451cb434521d2185509c68c5
   specs:
     rd_sales (0.0.1)
 
