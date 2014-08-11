@@ -5,11 +5,11 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def setup_api
-    begin
-      api = RdSales::API.new('client_secret', 
-                  "client_id",
-                  'username',
-                  'password')
+  	begin
+      api = RdSales::API.new('4750441449194766079', 
+		              "3MVG9xOCXq4ID1uFvbJ9BB6PGU7wj0spaO8mfi5Jbzo44zDffWBH9.LZGSqS7KqqCfv1N9h3OUQauNAXKKLCG",
+		              'thalesribeiro@salesforce.com',
+		              'n3wtesteVQpvwxGIwCqrFcPmzmbV7PzE')
       @token = api.get_token
     rescue => e
       flash.now[:alert] = 'There was a problem connecting to SalesForce api'
@@ -18,3 +18,5 @@ class ApplicationController < ActionController::Base
   end
 
 end
+
+

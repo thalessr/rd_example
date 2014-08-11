@@ -2,20 +2,33 @@
 <html>
 <head>
   <title>RdExample</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <![endif]-->
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
+    <%= bootstrap_flash %>
 	<% if flash[:notice] %>
 		<p id="notice"><%= flash[:notice] %></p>
 	<% end %>
 	<% if flash[:alert] %>
 		<p id="alert"><%= flash[:alert] %></p>
 	<% end %>
-
-<%= yield %>
-
+	<div class="container">
+		<div class="row">
+			<div class="span2">
+				<h3>Rd-Example</h3>
+				It uses <a href="https://github.com/thalessr/rd_sales"> rd_sale gem</a>.
+				The source-code of this app can be found at <a href="https://github.com/thalessr/rd_example">github</a>
+			</div>
+			<div class="span9">
+				<%= yield %>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
