@@ -27,7 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 #Salesforce gem
-gem 'rd_sales', git: 'git@github.com:thalessr/rd_sales.git'
+gem 'rd_sales', git: 'https://github.com/thalessr/rd_sales.git'
 
 group :production, :staging do
   gem 'thin'
