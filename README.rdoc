@@ -1,6 +1,6 @@
 == README
 
-This application works as an example of using the rd_sales gem which integretes to SalesForce CRM
+This application works as an example of using the rd_sales gem which integrates to SalesForce CRM
 
 http://rd-example.herokuapp.com
 
