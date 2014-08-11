@@ -11,9 +11,11 @@ class LeadsController < ApplicationController
 	 @lead.phone     = params[:phone]
 	 @lead.job_tile  = params[:job_tile]
 	 @lead.website   = params[:website]
+	 @lead.email     = params[:email]
 	 
 	 action = RdSales::Action.new(@token, @lead)
 	 action.json_post(@lead.to_json)
+	 flash[:notice] = "Lead created successfully"
 	 render :new
 	end
 
