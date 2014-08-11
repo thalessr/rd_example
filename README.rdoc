@@ -2,7 +2,7 @@
 
 This application works as an example of using the rd_sales gem which integretes to SalesForce CRM
 
-*[http://rd-example.herokuapp.com/](http://rd-example.herokuapp.com/)
+http://rd-example.herokuapp.com
 
 * Ruby version 2.1.0
 
