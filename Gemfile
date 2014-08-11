@@ -30,6 +30,8 @@ gem 'spring',        group: :development
 gem 'rd_sales', git: 'https://github.com/thalessr/rd_sales.git'
 
 group :production, :staging do
+  gem 'pg'
+  gem 'tap'
   gem 'thin'
   gem 'rails_12factor'
 end
