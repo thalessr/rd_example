@@ -1,15 +1,22 @@
 <%= form_tag @leads do %>
-
+    <div id="field">
       <%= label_tag :name %>
       <%= text_field_tag :name %>
-
+    </div>
       <%= label_tag :last_name %>
       <%= text_field_tag :last_name %>
 
       <%= label_tag :company %>
       <%= text_field_tag :company %>
 
-      
+      <%= label_tag :phone %>
+      <%= telephone_field_tag :phone %>
 
-      <%= submit_tag "Create", class: "btn btn-large btn-primary" %>
+      <%= label_tag :job_tile %>
+      <%= text_field_tag :job_tile %>
+
+      <%= label_tag :website %>
+      <%= text_field_tag :website %>
+
+      <%= submit_tag "Create"%>
 <% end %>
