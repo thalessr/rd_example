@@ -10,6 +10,7 @@ class ApplicationController < ActionController::Base
 		              "3MVG9xOCXq4ID1uFvbJ9BB6PGU7wj0spaO8mfi5Jbzo44zDffWBH9.LZGSqS7KqqCfv1N9h3OUQauNAXKKLCG",
 		              'thalesribeiro@salesforce.com',
 		              'n3wtesteVQpvwxGIwCqrFcPmzmbV7PzE')
+
       @token = api.get_token
     rescue => e
       flash.now[:alert] = 'There was a problem connecting to SalesForce api'
